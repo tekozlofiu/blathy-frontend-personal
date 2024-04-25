@@ -1,8 +1,10 @@
 # Setup
 
-Run XAMPP Apache + MySQL
+## Laravel backend
 
- backend
+Download project files
+Run XAMPP Apache + MySQL
+Navigate to backend
 
     cd drinks_backend
 
@@ -20,4 +22,22 @@ Seed database
 
 Run backend
 
-    php artisan server
+    php artisan serve
+
+(Check for API routes)
+
+    php artisan route:list
+
+## Vue frontend
+
+Create project
+
+    npm init vue@latest
+
+    Project name: ... DrinkFrontend
+
+    Vue Router .... Yes
+
+Install dependecies
+
+    
