@@ -1,6 +1,7 @@
 <script>
 import { http } from "@/utils/http.js";
 import TableRow from "@/components/TableRow.vue";
+import router from "@/router/index.js";
 
 export default {
   name: "HomeView",
@@ -17,8 +18,8 @@ export default {
           .then(jsonData => this.drinks = jsonData)
     },
 
-    modifyDrink: function (id) {
-      console.log(id);
+    showDrink: function (id) {
+      router.push(`drinks/${id}`);
     },
 
   },
@@ -51,7 +52,7 @@ export default {
       <tbody>
 
         <tr v-for="drink in drinks" :key="drink.id">
-          <table-row :drink="drink" @modify-button-click="modifyDrink" />
+          <table-row :drink="drink" @modify-button-click="showDrink" />
         </tr>
 
       </tbody>

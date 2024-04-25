@@ -29,7 +29,9 @@ export default {
   <td>{{ this.drink.name }}</td>
   <td>{{ this.drink.price }}</td>
   <td>{{ this.isDiscounted }}</td>
-  <td><input type="button" class="btn btn-primary" value="Módosítás" @click="onModifyClick" /></td>
+  <td>
+    <input type="button" class="btn btn-primary" value="Megtekintés" @click="onModifyClick" />
+  </td>
 </template>
 
 <style scoped>
