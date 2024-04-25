@@ -24,9 +24,7 @@ Run backend
 
     php artisan serve
 
-(Check for API routes)
-
-    php artisan route:list
+Frontend runs at `localhost:8000`
 
 ## Vue frontend
 
@@ -38,6 +36,12 @@ Create project
 
     Vue Router .... Yes
 
-Install dependecies
+    cd DrinkFrontend
 
+Install dependencies
+
+    npm install
     
+    npm install bootstrap axios vee-validate yup
+
+Frontend runs at `localhost:5173`

@@ -3,7 +3,7 @@ A feladatot JavaScript programozási nyelvben (vagy JavaScript-re forduló nyelv
 A feladat teljeskörű elkészítéséhez szükség van az 1. feladatban elkészített backend API végpontokra. Amennyiben valamelyiket nem tudta elkészíteni, indítsa el a mellékelt JSON szervert és azzal dolgozzon a továbbiakban.
 
 A feladat elkészítése során, ahol lehetséges, használjon szemantikus HTML tag-eket, CSS class-ok és id-k helyett!
-
+	a)	Készítsen projektet DrinkFrontend
 	
 	b)	Az alkalmazás (~oldal) betöltésekor a "HomeView" nézetet jelenítse meg, melyhez kérdezze le a „/api/drinks” végpont segítségével az üdítők adatait:
 		a.	Név
