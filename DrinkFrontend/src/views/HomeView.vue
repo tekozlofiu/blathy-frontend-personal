@@ -1,15 +1,32 @@
 <script>
+import { http } from "@/utils/http.js";
+import TableRow from "@/components/TableRow.vue";
+
 export default {
   name: "HomeView",
+  components: { TableRow },
 
-  data() {
-    return [
-
-    ]
+  mounted() {
+    this.getData();
   },
 
-  props: {
+  methods: {
+    getData: function () {
+      http.get("drinks")
+          .then(response => response.data.data)
+          .then(jsonData => this.drinks = jsonData)
+    },
 
+    modifyDrink: function (id) {
+      console.log(id);
+    },
+
+  },
+
+  data() {
+    return {
+      drinks : [],
+    }
   },
 }
 </script>
@@ -32,6 +49,10 @@ export default {
       </tr>
       </thead>
       <tbody>
+
+        <tr v-for="drink in drinks" :key="drink.id">
+          <table-row :drink="drink" @modify-button-click="modifyDrink" />
+        </tr>
 
       </tbody>
     </table>
